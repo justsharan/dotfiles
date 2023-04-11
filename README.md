@@ -11,7 +11,7 @@ Brief overview of the tools I use. Not all are represented in my dotfiles.
 * WM: Rectangle[^1]
 * Terminal: alacritty
 * Shell: zsh
-* Editor: VS code, nvim[^2]
+* Editor: VS code, nvim
 
 ## Usage
 
@@ -35,4 +35,3 @@ stow nvim
 ```
 
 [^1]: I used to use a tiling WM for macOS called [yabai](https://github.com/koekeishiya/yabai), but I eventually switched to Rectangle as it was simpler and had all the features I needed. yabai is more akin to proper tiling WMs from linux, such as i3 or dwm.
-[^2]: I primarily use neovim for my own programming and writing tasks, but I also hop onto VS code now and then for specific things. Working on mobile apps with Flutter, for example, is best done in VS code over neovim due to the amazing tooling. Other things, such as editing markdown or LaTeX files is better achieved in neovim (especially with my setup, which I will post pictures of eventually). In the end, which editor I use really just depends on my mood.
