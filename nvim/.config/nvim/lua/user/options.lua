@@ -34,22 +34,3 @@ vim.opt.shortmess:append "c"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
-
-require("presence").setup({
-  main_image = "file"
-})
-
-vim.api.nvim_create_autocmd("User", {
-  pattern = "GoyoEnter",
-  callback = function()
-    vim.api.nvim_command("Limelight")
-    require("lualine").hide()
-  end,
-})
-vim.api.nvim_create_autocmd("User", {
-  pattern = "GoyoLeave",
-  callback = function()
-    vim.api.nvim_command("Limelight!")
-    require("lualine").hide({ unhide=true })
-  end,
-})
