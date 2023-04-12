@@ -2,6 +2,8 @@ require "user.options"
 require "user.keymaps"
 require "user.plugins"
 require "user.lualine"
+require "user.cmp"
+require "user.lsp"
 
 vim.cmd [[colorscheme sonokai]]
 vim.g.sonokai_better_performance = 1
