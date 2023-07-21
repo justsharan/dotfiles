@@ -8,7 +8,7 @@ lualine.setup {
     icons_enabled = true,
     theme = 'nord',
     component_separators = { left = '', right = ''},
-    section_separators = { left = "", right = "" },
+    section_separators = { left = '', right = '' },
     --section_separators = { left = '', right = ''},
     disabled_filetypes = {
       statusline = {},
@@ -43,9 +43,9 @@ lualine.setup {
     lualine_a = {
       {
         'buffers',
-        separator = { left = "", right = "" },
-				right_padding = 2,
-				symbols = { alternate_file = "" },
+        separator = { left = '', right = '' },
+        right_padding = 2,
+        symbols = { alternate_file = '' },
       }
     }
   },
