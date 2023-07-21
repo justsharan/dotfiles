@@ -32,40 +32,21 @@ end
 -- Install your plugins here
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
-
-  -- Completion
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-nvim-lua'
-  use 'saadparwaiz1/cmp_luasnip'
-  use 'L3MON4D3/LuaSnip'
-
-  -- LSP
-  use 'neovim/nvim-lspconfig'
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
-  }
-
-  -- Aesthetic
-  use 'sainnhe/sonokai'
+  use 'shaunsingh/nord.nvim'
   use 'nvim-lualine/lualine.nvim'
-
-  -- Discord rich presence
-  use 'andweeb/presence.nvim'
-
-  -- Distraction-free writing
-  use 'junegunn/limelight.vim'
-  use 'junegunn/goyo.vim'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'TakenMC/presence.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
+  use {
+    'neovim/nvim-lspconfig',
+    requires = {
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim'
+    }
+  }
 
   if PACKER_BOOTSTRAP then
     require('packer').sync()
